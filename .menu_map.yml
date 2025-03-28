@@ -13,6 +13,7 @@
 200.deploying-a-high-availability-of-ocp=部署高可用 OCP
 400.deployment-faq=部署常见问题
 200.f5-ltm-and-alert-configuration=F5 LTM 及告警配置
+500.deploy-appendix-ee=附录
 200.deploying-community-ocp=部署社区版 OceanBase 云平台
 300.installation-planning=安装规划
 700.deploy-appendix=附录
@@ -144,9 +145,9 @@
 300.cluster-exceptions=集群异常
 400.cpu-exceptions=CPU 异常
 500.data-disk-full=数据盘满
-600.memory-exception=内存异常
-700.host-exception=主机异常
-800.other-tenants-exception=其它租户相关异常
+600.memory-exceptions=内存异常
+700.host-exceptions=主机异常
+800.other-tenants-exceptions=其它租户相关异常
 500.error-code-reference=错误码参考
 200.observer-error-code=内核错误码
 100.mysql-error-code=错误码（MySQL 模式）
