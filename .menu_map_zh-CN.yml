@@ -74,6 +74,7 @@
 100.manage-information-collection=管理信息采集
 200.manage-plans=管理预案
 300.use-the-inspection-feature=巡检服务
+350.manage-scheduled-tasks=定时任务
 200.configure-the-rules=配置调度规则
 400.initate-a-inspection=发起巡检
 600.manage-inspection-report=管理巡检报告
