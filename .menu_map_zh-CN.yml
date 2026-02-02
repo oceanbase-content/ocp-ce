@@ -69,7 +69,6 @@
 200.manage-custom-monitoring=使用自定义监控功能
 300.manage-indicator-items=管理指标项
 400.manage-chart=管理图表
-1000.diagnosis-and-tuning-fuctions=诊断调优
 1050.operation-and-maintenance-functions=运维管理
 100.manage-information-collection=信息采集
 200.manage-plans=预案管理
@@ -78,12 +77,13 @@
 400.initate-a-inspection=发起巡检
 600.manage-inspection-report=管理巡检报告
 350.manage-scheduled-tasks=定时任务
+1075.ai-management=AI 助手
+1000.diagnosis-and-tuning-fuctions=诊断服务
 100.manage-sql-diagnosis=SQL 诊断
 100.sql-diagnostics-introduction=SQL 诊断介绍
 200.manage-transaction-diagnostics=事务诊断
 300.manage-session=会话管理
 600.manage-the-reports=诊断报告
-1075.ai-management=AI 助手
 1100.backup-and-restoration-functions=备份恢复
 400.backup-now=立即备份
 500.regular-backup=定时备份
