@@ -7,8 +7,6 @@
 200.prepare-the-deployment-environment=准备部署环境
 300.deployment=部署 OCP
 100.planning-resources=规划资源
-100.planning-resources-of-single-node=规划单节点 OCP 资源
-200.planning-resources-of-high-availability=规划高可用 OCP 资源
 200.deploying-ocp=部署 OCP
 100.deploying-a-single-point-of-ocp=部署单节点 OCP
 200.deploying-a-high-availability-of-ocp=部署高可用 OCP
