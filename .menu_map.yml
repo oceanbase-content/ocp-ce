@@ -8,8 +8,6 @@
 300.deployment=部署 OCP
 100.planning-resources=规划资源
 200.deploying-ocp=部署 OCP
-100.deploying-a-single-point-of-ocp=部署单节点 OCP
-200.deploying-a-high-availability-of-ocp=部署高可用 OCP
 400.deployment-faq=部署常见问题
 200.f5-ltm-and-alert-configuration=F5 LTM 及告警配置
 500.deploy-appendix-ee=附录
@@ -105,9 +103,10 @@
 300.manage-a-user=管理用户
 300.manage-tags=管理标签
 450.manage-external-integration=管理外部集成
-100.manage-ai-models=管理 AI 模型
+100.manage-ai-models=管理大模型
 200.manage-sso-integration=管理 SSO 集成
 300.manage-sql-audit=管理 SQL Audit
+400.manage-prometheus=管理 Prometheus
 500.manage-system-parameter=管理系统参数
 700.manage-user-center=管理个人中心
 1800.sql-tuning-practices=SQL 调优实践
