@@ -112,6 +112,7 @@
 200.create-an-object-storage=创建对象存储配置
 300.edit-an-object-storage=编辑对象存储配置
 400.delete-an-object-storage=删除对象存储配置
+500.object-storage-best-practices=对象存储最佳实践
 500.manage-system-parameter=管理系统参数
 700.manage-user-center=管理个人中心
 1800.sql-tuning-practices=SQL 调优实践
