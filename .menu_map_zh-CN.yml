@@ -127,6 +127,7 @@
 200.ob-alert=OceanBase 告警
 300.application-alert=应用告警
 400.oas-alert=OAS 告警
+450.logservice-alert=LogService 告警
 500.appendix=附录
 200.api-reference=API 参考
 500.cluster-management=集群管理
@@ -157,6 +158,9 @@
 500.obkv-table=OBKV_Table
 600.obkv-hbase=OBKV_HBase
 700.obkv-redis=OBKV_Redis
+700.ai-cluster=AI 集群
+100.logservice=Logservice
+200.shared-storage=共享存储
 450.binlog-service=Binlog 服务
 100.subscription-connection=订阅连接监控
 200.binlog-performance-monitoring=Binlog 性能监控
