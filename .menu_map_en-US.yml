@@ -56,6 +56,8 @@
 400.manage-binlog-instance=Manage Binlog Instance
 500.manage-binlog-server=Manage Binlog Server
 850.host-features=Host Management
+855.logservice-instance-functions=Logservice Instance Management
+300.manage-a-logservice-cluster=Manage Logservice Clusters
 100.manage-a-host=Manage hosts
 860.alert-management=Alert Management
 300.manage-alert-rules=Manage alert rules
@@ -111,6 +113,7 @@
 200.manage-sso-integration=Manage SSO integration
 300.manage-sql-audit=Manage SQL audit
 400.manage-prometheus=Manage Prometheus
+500.manage-object-storage=Manage Object Storage
 500.manage-system-parameter=Manage system parameters
 700.manage-user-center=User center management
 300.common-o-m-problems=FAQ on O&M
@@ -127,6 +130,7 @@
 200.ob-alert=OceanBase alerts
 300.application-alert=Application alerts
 400.oas-alert=OAS alerts
+450.logservice-alert=LogService alerts
 500.appendix=Appendix
 200.api-reference=API Reference
 500.cluster-management=Cluster management
@@ -159,6 +163,9 @@
 500.obkv-table=OBKV_Table
 600.obkv-hbase=OBKV_HBase
 700.obkv-redis=OBKV_Redis
+700.ai-cluster=AI Cluster
+100.logservice=Logservice
+200.shared-storage=Shared Storage
 450.binlog-service=Binlog Service
 100.subscription-connection=Subscription Connection Monitoring
 200.binlog-performance-monitoring=Binlog Performance Monitoring
@@ -184,6 +191,7 @@
 2000.faq=FAQ
 2100.appendix=Appendix
 2200.release-notes=Release Notes
+96.rn-45x=V4.5
 97.rn-44x=V4.4
 98.rn-43x=V4.3
 99.rn-42x=V4.2
