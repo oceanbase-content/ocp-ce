@@ -52,6 +52,8 @@
 400.manage-binlog-instance=管理 Binlog 实例
 500.manage-binlog-server=管理 Binlog Server
 850.host-features=主机管理
+855.logservice-instance-functions=Logservice 实例管理
+300.manage-a-logservice-cluster=管理 Logservice 集群
 100.manage-a-host=管理主机
 860.alert-management=告警中心
 300.manage-alert-rules=管理告警规则
@@ -188,6 +190,7 @@
 400.common-monitoring-problems=监控常见问题
 2100.appendix=附录
 2200.release-notes=版本发布记录
+96.rn-45x=V4.5
 97.rn-44x=V4.4
 98.rn-43x=V4.3
 99.rn-42x=V4.2
