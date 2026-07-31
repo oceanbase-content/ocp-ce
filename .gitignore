@@ -1,2 +1,8 @@
 .idea
 *.DS_Store
+
+# OSS 上传脚本相关
+.env
+ossutilmac64
+ossutil64
+*.tar.gz
