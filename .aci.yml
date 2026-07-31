@@ -34,6 +34,9 @@ build:
       echo '<html><body><a target="__blank" href="http://11.124.9.83:19898/obdoc/${ACI_PROJECT_NAME}/${ACI_COMMIT_REF_NAME}/index.html">open doc</a></body></html>' > ./index.html
       DOCS_VERSION=$(tr -d '[:space:]' < script/docs-version.txt)
       echo "Upload docs version: ${DOCS_VERSION}"
+      if ! command -v curl >/dev/null 2>&1 && ! command -v wget >/dev/null 2>&1; then
+        yum install -y curl 2>/dev/null || (apt-get update -qq && apt-get install -y curl)
+      fi
       chmod +x script/docs-oss-manager.sh
       ./script/docs-oss-manager.sh upload -v "${DOCS_VERSION}" -f output.tar.gz -l
   publisher:

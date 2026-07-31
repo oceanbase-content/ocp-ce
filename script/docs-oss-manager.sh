@@ -137,11 +137,25 @@ detect_os() {
 
 detect_os
 
+# Download file via curl or wget (CI 镜像可能未预装 curl)
+download_file() {
+  local url="$1"
+  local dest="$2"
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL --noproxy '*' "$url" -o "$dest"
+  elif command -v wget >/dev/null 2>&1; then
+    wget -q "$url" -O "$dest"
+  else
+    echo "Error: curl or wget is required to download files"
+    return 1
+  fi
+}
+
 # Download ossutil if not exists
 download_ossutil() {
   if [[ ! -f "$OSSUTIL_PATH" ]]; then
     echo "Downloading $OSSUTIL_BINARY..."
-    if ! curl -fsSL --noproxy '*' "$OSSUTIL_URL" -o "$OSSUTIL_PATH"; then
+    if ! download_file "$OSSUTIL_URL" "$OSSUTIL_PATH"; then
       echo "Failed to download $OSSUTIL_BINARY"
       exit 1
     fi
@@ -326,7 +340,7 @@ download() {
   EXTRACT_PATH="$PROJECT_ROOT/public/docs"
 
   # Download from OSS
-  if ! curl -fsSL --noproxy '*' -o "$DOWNLOAD_PATH" "$DOWNLOAD_URL"; then
+  if ! download_file "$DOWNLOAD_URL" "$DOWNLOAD_PATH"; then
     echo ""
     echo "✗ Download failed"
     exit 1
