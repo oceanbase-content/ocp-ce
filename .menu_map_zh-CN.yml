@@ -94,7 +94,7 @@
 100.switching-primary-and-standby-tenants=主备租户切换
 200.switching-primary-and-standby-databases=主备库切换
 300.ocp-multi-cluster-mode=管理多集群模式 OCP
-1300.log-service=日志服务
+1300.log-service=日志检索
 1500.manage-software-packages=软件包管理
 1600.system-management-features=系统管理
 100.manage-password-box=管理凭据
