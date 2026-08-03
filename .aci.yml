@@ -1,6 +1,7 @@
 # 使用快捷键 "option"+"/" 或 "Alt"+"/" 可唤起所有 aci yaml 语法关键字
 # 流水线变量（在 ACI 平台配置，勿提交密钥）：
 #   ACI_VAR_docName        - ob-md2book 文档名
+#   ACI_VAR_DOCS_VERSION   - 文档版本号，如 4.5.0、4.4.0-bp3
 #   ACI_VAR_OSS_PATH       - 如 oss://obocp-release
 #   ACI_VAR_OSS_AK         - OSS AccessKey ID
 #   ACI_VAR_OSS_SK         - OSS AccessKey Secret
@@ -32,7 +33,11 @@ build:
       ob-md2book -p ./ -n "${ACI_VAR_docName}" -o ./ -r
       tar -zcvf output.tar.gz output
       echo '<html><body><a target="__blank" href="http://11.124.9.83:19898/obdoc/${ACI_PROJECT_NAME}/${ACI_COMMIT_REF_NAME}/index.html">open doc</a></body></html>' > ./index.html
-      DOCS_VERSION=$(tr -d '[:space:]' < script/docs-version.txt)
+      DOCS_VERSION="${ACI_VAR_DOCS_VERSION}"
+      if [ -z "${DOCS_VERSION}" ]; then
+        echo "Error: ACI_VAR_DOCS_VERSION is required"
+        exit 1
+      fi
       echo "Upload docs version: ${DOCS_VERSION}"
       if ! command -v curl >/dev/null 2>&1 && ! command -v wget >/dev/null 2>&1; then
         yum install -y curl 2>/dev/null || (apt-get update -qq && apt-get install -y curl)
