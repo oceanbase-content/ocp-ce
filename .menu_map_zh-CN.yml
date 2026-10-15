@@ -145,6 +145,7 @@
 1500.software-package=软件包管理
 1600.om-task-management=运维任务管理
 1700.system-management=系统管理
+1800.sop=标准运维流程
 100.health-examination=健康检查
 200.ocp-historical-events=操作审计
 300.ocpagent-management=Agent 管理
